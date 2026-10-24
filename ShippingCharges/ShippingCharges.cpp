@@ -16,7 +16,6 @@ int main() {
 
 	cin >> shippingDistance;
 
-
 	cout << endl << "Package weight: " << packageWeight << "kg" << endl << "Distance: " << shippingDistance << "mi" << endl;
 
 	return 0;
