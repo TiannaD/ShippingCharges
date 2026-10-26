@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="ShippingCharges/ShippingCharges.vcxproj" />
+  <Project Path="ShippingCharges/ShippingCharges.vcxproj" Id="40c9a010-379e-4edb-a951-2897fc0b62b9" />
 </Solution>
