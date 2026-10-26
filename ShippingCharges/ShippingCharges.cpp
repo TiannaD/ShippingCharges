@@ -37,28 +37,28 @@ int main() {
 				rate = 1.1;
 				multiplier = ceil(shippingDistance / PER_MILE);
 				totalCost = rate * multiplier;
-				cout << fixed << setprecision(2) << "Rate: " << rate << endl << "Multi: " << multiplier << endl << "Total: $" << totalCost;
+				cout << fixed << setprecision(2) << endl << "Weight: " << packageWeight << "kg" << endl << "Distance: " << shippingDistance << "mi" << endl << "Total Shipping: $" << totalCost << endl;
 			}
 			//2-6kg
 			else if (packageWeight > 2 and packageWeight <= 6) {
 				rate = 2.2;
 				multiplier = ceil(shippingDistance / PER_MILE);
 				totalCost = rate * multiplier;
-				cout << fixed << setprecision(2) << "Rate: " << rate << endl << "Multi: " << multiplier << endl << "Total: $" << totalCost;
+				cout << fixed << setprecision(2) << endl << "Weight: " << packageWeight << "kg" << endl << "Distance: " << shippingDistance << "mi" << endl << "Total Shipping: $" << totalCost << endl;
 			}
 			//6-10kg
 			else if (packageWeight > 6 and packageWeight <= 10) {
 				rate = 3.7;
 				multiplier = ceil(shippingDistance / PER_MILE);
 				totalCost = rate * multiplier;
-				cout << fixed << setprecision(2) << "Rate: " << rate << endl << "Multi: " << multiplier << endl << "Total: $" << totalCost;
+				cout << fixed << setprecision(2) << endl << "Weight: " << packageWeight << "kg" << endl << "Distance: " << shippingDistance << "mi" << endl << "Total Shipping: $" << totalCost << endl;
 			}
 			//10-20kg
 			else if (packageWeight > 10 and packageWeight <= 20) {
 				rate = 4.8;
 				multiplier = ceil(shippingDistance / PER_MILE);
 				totalCost = rate * multiplier;
-				cout << fixed << setprecision(2) << "Rate: " << rate << endl << "Multi: " << multiplier << endl << "Total: $" << totalCost;
+				cout << fixed << setprecision(2) << endl << "Weight: " << packageWeight << "kg" << endl << "Distance: " << shippingDistance << "mi" << endl << "Total Shipping: $" << totalCost << endl;
 			}
 		}
 		else if (shippingDistance < SHIPPING_MIN or shippingDistance > SHIPPING_MAX){
