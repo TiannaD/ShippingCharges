@@ -4,6 +4,8 @@
 
 using namespace std;
 
+//This program calculates shipping costs based on package weight and shipping distance
+
 const int PACKAGE_MIN = 0;
 const int PACKAGE_MAX = 20;
 const int SHIPPING_MIN = 10;
@@ -29,7 +31,7 @@ int main() {
 	cin >> shippingDistance;
 
 	if (packageWeight > PACKAGE_MIN and packageWeight <= PACKAGE_MAX) {
-		if (shippingDistance >= 10 and shippingDistance <= 3000) {
+		if (shippingDistance >= SHIPPING_MIN and shippingDistance <= SHIPPING_MAX) {
 			//2kg or less
 			if (packageWeight <= 2) {
 				rate = 1.1;
@@ -59,14 +61,14 @@ int main() {
 				cout << fixed << setprecision(2) << "Rate: " << rate << endl << "Multi: " << multiplier << endl << "Total: $" << totalCost;
 			}
 		}
-		else if (shippingDistance < 10 or shippingDistance > 3000){
+		else if (shippingDistance < SHIPPING_MIN or shippingDistance > SHIPPING_MAX){
 			cout << endl << "Invalid shipping distance." << endl;
 		}
 	}
-	else if (packageWeight <= 0){
+	else if (packageWeight <= PACKAGE_MIN){
 		cout << endl << "Invalid package weight." << endl;
 	}
-	else if (packageWeight > 20) {
+	else if (packageWeight > PACKAGE_MAX) {
 		cout << endl << "Package exceeds weigth limit." << endl;
 	}
 
